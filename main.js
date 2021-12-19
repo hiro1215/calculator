@@ -77,23 +77,35 @@ $(document).ready(function(){
   });
   
   $(".plus").click(function() {
-    $(".textDate").text(textDate + "+");
-    textDate=textDate+"+"
+    let dontDuplicatePlus= textDate.match(/\+$/);
+    if (textDate != "" && dontDuplicatePlus== null){
+        $(".textDate").text(textDate + "+");
+        textDate=textDate+"+"
+    }
   });
   
   $(".minus").click(function() {
-    $(".textDate").text(textDate + "-");
-    textDate=textDate+"-"
+    let dontDuplicateMinus= textDate.match(/\-$/);
+    if (textDate != "" && dontDuplicateMinus== null){
+        $(".textDate").text(textDate + "-");
+        textDate=textDate+"-"
+    }
   });
   
   $(".times").click(function() {
-    $(".textDate").text(textDate + "*");
-    textDate=textDate+"*"
+    let dontDuplicateTimes= textDate.match(/\*$/);
+    if (textDate != "" && dontDuplicateTimes== null){
+        $(".textDate").text(textDate + "*");
+        textDate=textDate+"*"
+    }
   });
   
   $(".divided").click(function() {
-    $(".textDate").text(textDate + "/");
-    textDate=textDate+"/"
+    let dontDuplicateDivided= textDate.match(/\/$/);
+    if (textDate != "" && dontDuplicateDivided== null){
+        $(".textDate").text(textDate + "/");
+        textDate=textDate+"/"
+    }
   });
   
   $(".equal").click(function() {
