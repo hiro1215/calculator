@@ -19,7 +19,7 @@ $(document).ready(function(){
   
   $(".point").click(function() {
     let dontDuplicatePoint= textDate.match(/\./);
-    if (textDate != "" && dontDuplicatePoint== null){
+    if (textDate != "" && dontDuplicatePoint== null && dontDuplicatePlus== null){
         $(".textDate").text(textDate + ".");
         textDate=textDate+"."
     }
@@ -78,31 +78,43 @@ $(document).ready(function(){
   
   $(".plus").click(function() {
     let dontDuplicatePlus= textDate.match(/\+$/);
-    if (textDate != "" && dontDuplicatePlus== null){
+    let dontDuplicateMinus= textDate.match(/\-$/);
+    let dontDuplicateTimes= textDate.match(/\*$/);
+    let dontDuplicateDivided= textDate.match(/\/$/);
+    if (textDate != "" && dontDuplicatePlus== null && dontDuplicateMinus == null && dontDuplicateTimes== null && dontDuplicateDivided== null){
         $(".textDate").text(textDate + "+");
         textDate=textDate+"+"
     }
   });
   
   $(".minus").click(function() {
+    let dontDuplicatePlus= textDate.match(/\+$/);
     let dontDuplicateMinus= textDate.match(/\-$/);
-    if (textDate != "" && dontDuplicateMinus== null){
+    let dontDuplicateTimes= textDate.match(/\*$/);
+    let dontDuplicateDivided= textDate.match(/\/$/);
+    if (textDate != "" && dontDuplicatePlus== null && dontDuplicateMinus == null && dontDuplicateTimes== null && dontDuplicateDivided== null){
         $(".textDate").text(textDate + "-");
         textDate=textDate+"-"
     }
   });
   
   $(".times").click(function() {
+    let dontDuplicatePlus= textDate.match(/\+$/);
+    let dontDuplicateMinus= textDate.match(/\-$/);
     let dontDuplicateTimes= textDate.match(/\*$/);
-    if (textDate != "" && dontDuplicateTimes== null){
+    let dontDuplicateDivided= textDate.match(/\/$/);
+    if (textDate != "" && dontDuplicatePlus== null && dontDuplicateMinus == null && dontDuplicateTimes== null && dontDuplicateDivided== null){
         $(".textDate").text(textDate + "*");
         textDate=textDate+"*"
     }
   });
   
   $(".divided").click(function() {
+    let dontDuplicatePlus= textDate.match(/\+$/);
+    let dontDuplicateMinus= textDate.match(/\-$/);
+    let dontDuplicateTimes= textDate.match(/\*$/);
     let dontDuplicateDivided= textDate.match(/\/$/);
-    if (textDate != "" && dontDuplicateDivided== null){
+    if (textDate != "" && dontDuplicatePlus== null && dontDuplicateMinus == null && dontDuplicateTimes== null && dontDuplicateDivided== null){
         $(".textDate").text(textDate + "/");
         textDate=textDate+"/"
     }
