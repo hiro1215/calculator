@@ -4,10 +4,8 @@ let textDate = "";
 
 $(document).ready(function(){
   $(".zero").click(function() {
-    if (textDate != ""){
         $(".textDate").text(textDate + "0");
         textDate=textDate+"0"
-    }
   });
   
   $(".zerozero").click(function() {
@@ -19,7 +17,7 @@ $(document).ready(function(){
   
   $(".point").click(function() {
     let dontDuplicatePoint= textDate.match(/\./);
-    if (textDate != "" && dontDuplicatePoint== null && dontDuplicatePlus== null){
+    if (textDate != "" && dontDuplicatePoint== null){
         $(".textDate").text(textDate + ".");
         textDate=textDate+"."
     }
