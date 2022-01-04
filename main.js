@@ -25,48 +25,66 @@ $(document).ready(function(){
   });
  
   $(".one").click(function() {
-    $(".textDate").text(textDate + "1");
-    textDate=textDate+"1"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "1");
+      textDate=textDate+"1"
+    }
   });
   
   $(".two").click(function() {
-    $(".textDate").text(textDate + "2");
-    textDate=textDate+"2"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "2");
+      textDate=textDate+"2"
+    }
   });
   
   $(".three").click(function() {
-    $(".textDate").text(textDate + "3");
-    textDate=textDate+"3"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "3");
+      textDate=textDate+"3"
+    }
   });
   
   $(".four").click(function() {
-    $(".textDate").text(textDate + "4");
-    textDate=textDate+"4"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "4");
+      textDate=textDate+"4"
+    }
   });
   
   $(".five").click(function() {
-    $(".textDate").text(textDate + "5");
-    textDate=textDate+"5"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "5");
+      textDate=textDate+"5"
+    }
   });
   
   $(".six").click(function() {
-    $(".textDate").text(textDate + "6");
-    textDate=textDate+"6"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "6");
+      textDate=textDate+"6"
+    }
   });
   
   $(".seven").click(function() {
-    $(".textDate").text(textDate + "7");
-    textDate=textDate+"9"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "7");
+      textDate=textDate+"9"
+    }
   });
   
   $(".eight").click(function() {
-    $(".textDate").text(textDate + "8");
-    textDate=textDate+"8"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "8");
+      textDate=textDate+"8"
+    }
   });
   
   $(".nine").click(function() {
-    $(".textDate").text(textDate + "9");
-    textDate=textDate+"9"
+    if (textDate != "0"){
+      $(".textDate").text(textDate + "9");
+      textDate=textDate+"9"
+    }
   });
   
   $(".allclear").click(function() {
